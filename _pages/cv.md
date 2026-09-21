@@ -18,9 +18,16 @@ Profile / 个人简介
 ======
 * Undergraduate student based in Zhuhai, China
 * Currently studying Computer Science and Technology at BNBU
-* Interested in Computer Vision and image-related applications
-* 目前关注计算机视觉与图像领域，持续积累算法、机器学习和工程开发能力
-  
+* Current research direction: single-step image editing (Computer Vision)
+* 目前研究方向为单步图像编辑（计算机视觉方向），持续积累算法、机器学习和科研能力
+
+Research / 科研经历
+======
+* One paper on lightweight sparse feature matching accepted to **ACCV 2026** (Asian Conference on Computer Vision)
+* **Single-step image editing** — current research direction, advised by [Wentao Cheng](https://wtchengcv.github.io/); improving the stability of one-step image editing generation on top of ChordEdit (CVPR 2026 Oral)
+* 一篇轻量级稀疏特征匹配方向的论文被 **ACCV 2026**（Asian Conference on Computer Vision）接收
+* **单步图像编辑** —— 当前研究方向，导师 [程文韬](https://wtchengcv.github.io/)；基于 ChordEdit（CVPR 2026 Oral）提升单步图像编辑生成过程的稳定性
+
 Skills / 技术栈
 ======
 * Python

@@ -1,0 +1,109 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{style/resume}[2026/09/06 Modular Chinese resume style]
+
+\RequirePackage[a4paper,top=1.05cm,bottom=1.00cm,left=1.35cm,right=1.35cm]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+
+\definecolor{ResumeBlue}{HTML}{1F4E79}
+\definecolor{ResumeLink}{HTML}{245F91}
+\definecolor{ResumeMuted}{HTML}{555555}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=ResumeLink,
+  linkcolor=ResumeBlue,
+  pdfborder={0 0 0}
+}
+\urlstyle{same}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.02}
+
+\newcommand{\ResumeSection}[1]{%
+  \vspace{4pt}%
+  {\large\bfseries\color{ResumeBlue}#1}\par
+  \vspace{1pt}%
+  {\color{ResumeBlue}\rule{\textwidth}{0.65pt}}%
+  \vspace{1pt}%
+}
+
+\newcommand{\ResumeEntry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r@{}}
+    \textbf{#1} & {\small\color{ResumeMuted}#3} \\
+    {\small #2} &
+  \end{tabularx}%
+  \vspace{-3pt}%
+}
+
+\newenvironment{ResumeItemize}{%
+  \begin{itemize}[
+    leftmargin=1.35em,
+    label={\color{ResumeBlue}\small\textbullet},
+    topsep=1pt,
+    itemsep=0.8pt,
+    parsep=0pt,
+    partopsep=0pt
+  ]
+}{%
+  \end{itemize}
+}
+
+\newcommand{\ResumeHonor}[2]{%
+  \begin{tabularx}{\textwidth}{@{}p{3.2em}X@{}}
+    {\color{ResumeMuted}#1} & #2
+  \end{tabularx}%
+  \vspace{-4pt}%
+}
+
+\newcommand{\ResumeSkill}[2]{%
+  \textbf{\color{ResumeBlue}#1：}#2\par
+  \vspace{0.5pt}%
+}
+
+% Placeholder drawn when no photo is configured, so the header keeps its layout.
+\newcommand{\ResumePhotoPlaceholder}{%
+  \setlength{\fboxsep}{0pt}%
+  \fbox{\parbox[c][3.40cm][c]{2.55cm}{\centering\small\color{ResumeMuted}证件照}}%
+}
+
+\newcommand{\ResumePhoto}{%
+  \ifx\ResumePhotoPath\empty
+    \ResumePhotoPlaceholder
+  \else
+    \IfFileExists{\ResumePhotoPath}%
+      {\includegraphics[width=2.55cm,height=3.40cm,keepaspectratio]{\ResumePhotoPath}}%
+      {\ResumePhotoPlaceholder}%
+  \fi
+}
+
+% Phone and email are omitted when empty, so a checkout without
+% content/profile-local.tex prints no dangling labels.
+\newcommand{\ResumeHeader}{%
+  \begin{minipage}[c]{0.79\textwidth}
+    {\fontsize{22}{25}\selectfont\bfseries\color{ResumeBlue}\ResumeNameCN}%
+    \hspace{0.7em}{\large\color{ResumeMuted}\ResumeNameEN}\par
+    \vspace{5pt}
+    \small
+    \ifx\ResumePhone\empty\else 电话：\href{tel:\ResumePhone}{\ResumePhone}\quad\fi
+    \ifx\ResumeEmail\empty\else 邮箱：\href{mailto:\ResumeEmail}{\ResumeEmail}\quad\fi
+    现居：\ResumeLocation\par
+    \vspace{2pt}
+    GitHub：\href{https://github.com/\ResumeGithub}{github.com/\ResumeGithub}\quad
+    CSDN：\href{https://blog.csdn.net/\ResumeCSDN}{blog.csdn.net/\ResumeCSDN}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.17\textwidth}
+    \raggedleft
+    \ResumePhoto
+  \end{minipage}%
+  \par
+  \vspace{1pt}%
+}

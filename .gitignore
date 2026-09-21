@@ -20,5 +20,15 @@ package-lock.json
 .vscode/
 .worktrees/
 
+# Ignore LaTeX build artifacts next to the resume sources
+resume/*.aux
+resume/*.log
+resume/*.out
+resume/*.pdf
+
+# Keep contact details and the resume photo out of the repository
+resume/content/profile-local.tex
+resume/assets/profile-local.jpg
+
 # Ignore files created by MacOS
 .DS_Store

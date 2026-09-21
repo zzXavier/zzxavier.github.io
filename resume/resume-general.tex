@@ -1,0 +1,19 @@
+\documentclass[10pt,a4paper,UTF8]{ctexart}
+
+\usepackage{style/resume}
+\input{content/profile}
+% Privacy-sensitive values (phone, email, photo) live in a git-ignored file that
+% overrides the empty defaults above whenever it is present.
+\IfFileExists{content/profile-local.tex}{\input{content/profile-local.tex}}{}
+
+\begin{document}
+
+\ResumeHeader
+\input{content/education}
+\input{content/strengths}
+\input{content/research}
+\input{content/projects}
+\input{content/honors}
+\input{content/skills}
+
+\end{document}

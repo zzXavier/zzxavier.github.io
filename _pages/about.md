@@ -21,18 +21,20 @@ I entered BNBU in 2024 with a **full freshman scholarship** and expect to gradua
 Interests / 兴趣方向
 ======
 
-My current interests focus on **Computer Vision**, especially image-related problems and applications.
+My current research focuses on **single-step image editing**, within the broader field of **Computer Vision**, advised by **Wentao Cheng** at BNBU. The work builds on ChordEdit (CVPR 2026 Oral) and targets the stability of one-step image editing generation.
 
-我目前主要关注 **计算机视觉**，尤其是图像领域相关的问题与应用。
+我目前的研究方向是 **单步图像编辑**，属于 **计算机视觉** 领域，导师为北师香港浸会大学 **程文韬** 老师。研究内容是基于 ChordEdit（CVPR 2026 Oral）提升单步图像编辑生成过程的稳定性。
 
 Highlights / 经历亮点
 ======
 
+- One paper accepted to **ACCV 2026** (Asian Conference on Computer Vision), on lightweight sparse feature matching
 - Provincial Second Prize, Chinese Mathematics Competitions
 - Third Prize, Guangdong Collegiate Programming Contest (GDCPC)
 - Provincial Second Prize, C++ Group, The 16th Lanqiao Cup
 - National Second Prize, C++ Group, The 17th Lanqiao Cup
 
+- 一篇论文被 **ACCV 2026**（Asian Conference on Computer Vision）接收，方向为轻量级稀疏特征匹配
 - 全国大学生数学竞赛省二等奖
 - 广东省大学生程序竞赛（GDCPC）三等奖
 - 第 16 届蓝桥杯 C++ 组省二等奖
