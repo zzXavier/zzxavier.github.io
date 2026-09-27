@@ -2,7 +2,7 @@
 title: "MFilter: Pair-Conditioned Keypoint Matchability for Lightweight Sparse Matching"
 collection: publications
 category: conferences
-permalink: /publication/mfilter-accv-2026
+permalink: /publication/mfilter-accv-2026/
 excerpt: 'A lightweight, pair-conditioned approach to keypoint matchability for sparse feature matching.'
 venue: 'Asian Conference on Computer Vision (ACCV 2026)'
 pub_status: 'Accepted'
