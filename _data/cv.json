@@ -4,7 +4,7 @@
     "email": "",
     "phone": "",
     "website": "https://zzxavier.github.io",
-    "summary": "Undergraduate student in Computer Science and Technology at BNBU, working on single-step image editing under the supervision of Wentao Cheng, building on ChordEdit to improve one-step image editing generation stability. One paper on lightweight sparse feature matching has been accepted to ACCV 2026.",
+    "summary": "Undergraduate student in Computer Science and Technology at BNBU. My current research focuses on one-step image editing, advised by Wentao Cheng. Co-first author of MFilter: Pair-Conditioned Keypoint Matchability for Lightweight Sparse Matching (ACCV 2026).",
     "location": {
       "address": "",
       "postalCode": "",
@@ -27,11 +27,6 @@
         "network": "CSDN",
         "username": "zzXavier",
         "url": "https://blog.csdn.net/zzXavier"
-      },
-      {
-        "network": "QQ",
-        "username": "794853319",
-        "url": "https://wpa.qq.com/msgrd?v=3&uin=794853319&site=qq&menu=yes"
       }
     ]
   },
@@ -61,11 +56,12 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1(sample only)",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "MFilter: Pair-Conditioned Keypoint Matchability for Lightweight Sparse Matching",
+      "publisher": "Asian Conference on Computer Vision (ACCV 2026)",
+      "status": "Accepted",
+      "role": "Co-first Author",
+      "authors": "Xinpeng Zhu†, Zhixiong Zhang†, Wentao Cheng (†equal contribution)",
+      "summary": "A lightweight, pair-conditioned approach to keypoint matchability for sparse feature matching."
     }
   ],
   "projects": [

@@ -20,15 +20,11 @@ package-lock.json
 .vscode/
 .worktrees/
 
-# Ignore LaTeX build artifacts next to the resume sources
-resume/*.aux
-resume/*.log
-resume/*.out
-resume/*.pdf
-
-# Keep contact details and the resume photo out of the repository
-resume/content/profile-local.tex
-resume/assets/profile-local.jpg
+# The LaTeX resume source lives in a separate private repository.
+# It contains unpublished research detail and contact information, so keep the
+# whole directory out of this public homepage repo.
+# (To host a CV PDF on the site, publish it under files/ instead.)
+resume/
 
 # Ignore files created by MacOS
 .DS_Store

@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale: "zh-CN"
+locale: "en-US"
 site_theme: "default"
-title: "Xavier Zhang's profile"
+title: "Xavier Zhang"
 title_separator: "-"
 name: &name "Xavier Zhang"
-description: &description "Xavier Zhang's bilingual academic profile"
+description: &description "Xavier Zhang — Computer Vision and Generative Models at BNBU"
 url: "https://zzxavier.github.io"
 baseurl: ""   # Empty for a root GitHub Pages repository.
 repository: "zzxavier/zzxavier.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Xavier Zhang"
   pronouns         : "he/him"  
-  bio              : "BNBU CST undergraduate | Computer Vision · Single-Step Image Editing"
+  bio              : "BNBU CST undergraduate | Computer Vision · One-Step Image Editing"
   location         : "Zhuhai, China"
   employer         : "Beijing Normal-Hong Kong Baptist University (BNBU)"
   uri              :
@@ -81,7 +81,6 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : zzXavier
-  qq               : "794853319"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
