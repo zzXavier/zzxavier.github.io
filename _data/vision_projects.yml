@@ -7,6 +7,7 @@
       repo_url: https://github.com/zzXavier/subject-consistent-image-editing
       summary: I used reference images to guide generation and local edits. I evaluated whether the subject stayed recognizable, whether the requested edit appeared, and what changed outside the edited region.
     - title: Detail Fidelity in Diffusion Restoration
+      repo_url: https://github.com/zzXavier/diffusion-restoration-fidelity
       summary: I compared diffusion restoration methods on fidelity to the input, invented details, text legibility, and inference cost.
     - title: A Replayable Image Editing Agent
       repo_url: https://github.com/zzXavier/replayable-image-editing-agent
