@@ -1,7 +1,8 @@
 ---
 title: "PokeBattle Insight"
 collection: projects
-date: 2026-05-27
+project_group: "Software Projects"
+project_order: 1
 url: "https://github.com/zzXavier/PokeBattle"
 description: "A Pokemon analytics platform featuring data cleaning, statistical analysis, visualization, and machine-learning-based battle evaluation."
 ---

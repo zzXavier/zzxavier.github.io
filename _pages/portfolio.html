@@ -3,32 +3,27 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+project_groups:
+  - Image Editing and Restoration
+  - Image Generation and Evaluation
+  - Visual Localization and Matching
+  - Software Projects
 ---
-
-{% include base_path %}
 
 <nav aria-label="Project categories">
   <ul>
-    {% for group in site.data.vision_projects %}
-      <li><a href="#{{ group.title | slugify }}">{{ group.title | escape }}</a></li>
+    {% for group in page.project_groups %}
+      <li><a href="#{{ group | slugify }}">{{ group | escape }}</a></li>
     {% endfor %}
-    <li><a href="#software-projects">Software Projects</a></li>
   </ul>
 </nav>
 
-{% for group in site.data.vision_projects %}
-  <section aria-labelledby="{{ group.title | slugify }}">
-    <h2 class="archive__subtitle" id="{{ group.title | slugify }}">{{ group.title | escape }}</h2>
-    {% for project in group.projects %}
-      <h3 class="archive__item-title" id="{{ project.title | slugify }}">{% if project.repo_url %}<a href="{{ project.repo_url | escape }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</h3>
-      <p class="archive__item-excerpt">{{ project.summary | escape }}</p>
+{% for group in page.project_groups %}
+  <section aria-labelledby="{{ group | slugify }}">
+    <h2 class="archive__subtitle" id="{{ group | slugify }}">{{ group | escape }}</h2>
+    {% assign projects = site.projects | where: "project_group", group | sort: "project_order" %}
+    {% for post in projects %}
+      {% include archive-single.html %}
     {% endfor %}
   </section>
 {% endfor %}
-
-<section aria-labelledby="software-projects">
-  <h2 class="archive__subtitle" id="software-projects">Software Projects</h2>
-  {% for post in site.projects reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-</section>

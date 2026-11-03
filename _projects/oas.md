@@ -1,7 +1,8 @@
 ---
 title: "OAS: Graduate Application Project"
 collection: projects
-date: 2026-01-01
+project_group: "Software Projects"
+project_order: 2
 url: "https://github.com/zhaozefeng67-blip/OAS"
 description: "A web-based project for supporting graduate application workflows."
 ---

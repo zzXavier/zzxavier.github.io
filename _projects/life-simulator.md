@@ -1,7 +1,8 @@
 ---
 title: "Life Simulator"
 collection: projects
-date: 2025-05-01
+project_group: "Software Projects"
+project_order: 3
 description: "A Java-based simulation project that models choices, events, and life-state changes."
 ---
 

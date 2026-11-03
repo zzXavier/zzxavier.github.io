@@ -42,6 +42,7 @@ Awards
 
 Selected Projects
 ======
-  <ul>{% for post in site.projects reversed %}
+  {% assign selected_projects = site.projects | where: "project_group", "Software Projects" | sort: "project_order" %}
+  <ul>{% for post in selected_projects %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
