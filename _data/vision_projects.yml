@@ -1,0 +1,34 @@
+- title: Image Editing and Restoration
+  projects:
+    - title: Product Background Editing
+      summary: I built a workflow to replace a product photo's background and checked whether the edit preserved packaging text, logos, and edges while matching the requested scene.
+    - title: Subject Consistency in Personalized Generation and Local Editing
+      summary: I used reference images to guide generation and local edits. I evaluated whether the subject stayed recognizable, whether the requested edit appeared, and what changed outside the edited region.
+    - title: Detail Fidelity in Diffusion Restoration
+      summary: I compared diffusion restoration methods on fidelity to the input, invented details, text legibility, and inference cost.
+    - title: A Replayable Image Editing Agent
+      summary: I built an agent that coordinates editing tools, logs each step for replay, and limits retries. I compared a fixed editing sequence with one that uses feedback to decide its next step.
+
+- title: Image Generation and Evaluation
+  projects:
+    - title: Multi-Attribute Scoring and Reranking for Text-to-Image Generation
+      summary: I ranked candidate images three ways using whole-prompt scores, scores for individual prompt requirements, and preference comparisons.
+    - title: Preference Alignment and Reward Hacking in Diffusion Models
+      summary: I compared supervised fine-tuning with direct preference optimization (DPO) and examined cases where reward scores disagreed with an independent evaluation.
+    - title: Few-Step Distillation and Inference Cost
+      summary: I compared few-step distillation and inference settings, measuring image quality, end-to-end latency, and peak memory use.
+    - title: Training Data Quality and Mixtures
+      summary: I studied how removing duplicates, filtering poorly matched image-text pairs, and changing the data mix affected image generation under matched training budgets.
+    - title: Recurrent Image Generation under a Fixed Compute Budget
+      summary: I built a small image generator that reuses weights across steps and compared architectures with matched parameter counts and compute budgets.
+    - title: Reinforcement Learning for Image Generation
+      summary: I implemented a reinforcement learning loop for image generation and examined how training rewards compared with independent evaluations and sample diversity.
+
+- title: Visual Localization and Matching
+  projects:
+    - title: Planar Localization with Reliability Checks
+      summary: I built a system that can reject a planar localization estimate. I used inlier quality, spatial coverage, and reprojection error to diagnose failures.
+    - title: Unsupervised Image Registration under Partial Occlusion
+      summary: I implemented nonrigid registration for partially occluded images, compared it with baselines, and examined deformation errors and folding.
+    - title: Confidence and Occlusion in Stereo Matching
+      summary: I evaluated stereo disparity estimates and their confidence in regions with little texture, repeated patterns, or occlusion.

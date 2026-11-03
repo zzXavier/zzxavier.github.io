@@ -7,8 +7,28 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.projects reversed %}
-  {% include archive-single.html %}
-{% else %}
-  <p>Projects will be added here soon.</p>
+<nav aria-label="Project categories">
+  <ul>
+    {% for group in site.data.vision_projects %}
+      <li><a href="#{{ group.title | slugify }}">{{ group.title | escape }}</a></li>
+    {% endfor %}
+    <li><a href="#software-projects">Software Projects</a></li>
+  </ul>
+</nav>
+
+{% for group in site.data.vision_projects %}
+  <section aria-labelledby="{{ group.title | slugify }}">
+    <h2 class="archive__subtitle" id="{{ group.title | slugify }}">{{ group.title | escape }}</h2>
+    {% for project in group.projects %}
+      <h3 class="archive__item-title" id="{{ project.title | slugify }}">{{ project.title | escape }}</h3>
+      <p class="archive__item-excerpt">{{ project.summary | escape }}</p>
+    {% endfor %}
+  </section>
 {% endfor %}
+
+<section aria-labelledby="software-projects">
+  <h2 class="archive__subtitle" id="software-projects">Software Projects</h2>
+  {% for post in site.projects reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+</section>
