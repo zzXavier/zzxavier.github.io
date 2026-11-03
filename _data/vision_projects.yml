@@ -31,6 +31,7 @@
       repo_url: https://github.com/zzXavier/reliability-aware-planar-localization
       summary: I built a system that can reject a planar localization estimate. I used inlier quality, spatial coverage, and reprojection error to diagnose failures.
     - title: Unsupervised Image Registration under Partial Occlusion
+      repo_url: https://github.com/zzXavier/occlusion-aware-image-registration
       summary: I implemented nonrigid registration for partially occluded images, compared it with baselines, and examined deformation errors and folding.
     - title: Confidence and Occlusion in Stereo Matching
       summary: I evaluated stereo disparity estimates and their confidence in regions with little texture, repeated patterns, or occlusion.
