@@ -8,6 +8,7 @@
     - title: Detail Fidelity in Diffusion Restoration
       summary: I compared diffusion restoration methods on fidelity to the input, invented details, text legibility, and inference cost.
     - title: A Replayable Image Editing Agent
+      repo_url: https://github.com/zzXavier/replayable-image-editing-agent
       summary: I built an agent that coordinates editing tools, logs each step for replay, and limits retries. I compared a fixed editing sequence with one that uses feedback to decide its next step.
 
 - title: Image Generation and Evaluation
