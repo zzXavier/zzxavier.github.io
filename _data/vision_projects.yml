@@ -34,4 +34,5 @@
       repo_url: https://github.com/zzXavier/occlusion-aware-image-registration
       summary: I implemented nonrigid registration for partially occluded images, compared it with baselines, and examined deformation errors and folding.
     - title: Confidence and Occlusion in Stereo Matching
+      repo_url: https://github.com/zzXavier/stereo-confidence-evaluation
       summary: I evaluated stereo disparity estimates and their confidence in regions with little texture, repeated patterns, or occlusion.
