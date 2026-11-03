@@ -12,6 +12,7 @@
 - title: Image Generation and Evaluation
   projects:
     - title: Multi-Attribute Scoring and Reranking for Text-to-Image Generation
+      repo_url: https://github.com/zzXavier/text-to-image-reranking
       summary: I ranked candidate images three ways using whole-prompt scores, scores for individual prompt requirements, and preference comparisons.
     - title: Preference Alignment and Reward Hacking in Diffusion Models
       repo_url: https://github.com/zzXavier/diffusion-preference-alignment
