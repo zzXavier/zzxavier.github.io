@@ -3,6 +3,7 @@
     - title: Product Background Editing
       summary: I built a workflow to replace a product photo's background and checked whether the edit preserved packaging text, logos, and edges while matching the requested scene.
     - title: Subject Consistency in Personalized Generation and Local Editing
+      repo_url: https://github.com/zzXavier/subject-consistent-image-editing
       summary: I used reference images to guide generation and local edits. I evaluated whether the subject stayed recognizable, whether the requested edit appeared, and what changed outside the edited region.
     - title: Detail Fidelity in Diffusion Restoration
       summary: I compared diffusion restoration methods on fidelity to the input, invented details, text legibility, and inference cost.
