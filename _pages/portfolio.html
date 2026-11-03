@@ -20,7 +20,7 @@ author_profile: true
   <section aria-labelledby="{{ group.title | slugify }}">
     <h2 class="archive__subtitle" id="{{ group.title | slugify }}">{{ group.title | escape }}</h2>
     {% for project in group.projects %}
-      <h3 class="archive__item-title" id="{{ project.title | slugify }}">{{ project.title | escape }}</h3>
+      <h3 class="archive__item-title" id="{{ project.title | slugify }}">{% if project.repo_url %}<a href="{{ project.repo_url | escape }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</h3>
       <p class="archive__item-excerpt">{{ project.summary | escape }}</p>
     {% endfor %}
   </section>
