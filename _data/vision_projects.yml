@@ -18,6 +18,7 @@
     - title: Few-Step Distillation and Inference Cost
       summary: I compared few-step distillation and inference settings, measuring image quality, end-to-end latency, and peak memory use.
     - title: Training Data Quality and Mixtures
+      repo_url: https://github.com/zzXavier/generative-data-mixtures
       summary: I studied how removing duplicates, filtering poorly matched image-text pairs, and changing the data mix affected image generation under matched training budgets.
     - title: Recurrent Image Generation under a Fixed Compute Budget
       summary: I built a small image generator that reuses weights across steps and compared architectures with matched parameter counts and compute budgets.
