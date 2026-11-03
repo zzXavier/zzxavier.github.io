@@ -16,6 +16,7 @@
     - title: Preference Alignment and Reward Hacking in Diffusion Models
       summary: I compared supervised fine-tuning with direct preference optimization (DPO) and examined cases where reward scores disagreed with an independent evaluation.
     - title: Few-Step Distillation and Inference Cost
+      repo_url: https://github.com/zzXavier/few-step-diffusion-distillation
       summary: I compared few-step distillation and inference settings, measuring image quality, end-to-end latency, and peak memory use.
     - title: Training Data Quality and Mixtures
       repo_url: https://github.com/zzXavier/generative-data-mixtures
