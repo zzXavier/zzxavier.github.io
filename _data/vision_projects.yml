@@ -1,6 +1,7 @@
 - title: Image Editing and Restoration
   projects:
     - title: Product Background Editing
+      repo_url: https://github.com/zzXavier/product-background-editing
       summary: I built a workflow to replace a product photo's background and checked whether the edit preserved packaging text, logos, and edges while matching the requested scene.
     - title: Subject Consistency in Personalized Generation and Local Editing
       repo_url: https://github.com/zzXavier/subject-consistent-image-editing
