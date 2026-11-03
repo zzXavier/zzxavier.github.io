@@ -14,6 +14,7 @@
     - title: Multi-Attribute Scoring and Reranking for Text-to-Image Generation
       summary: I ranked candidate images three ways using whole-prompt scores, scores for individual prompt requirements, and preference comparisons.
     - title: Preference Alignment and Reward Hacking in Diffusion Models
+      repo_url: https://github.com/zzXavier/diffusion-preference-alignment
       summary: I compared supervised fine-tuning with direct preference optimization (DPO) and examined cases where reward scores disagreed with an independent evaluation.
     - title: Few-Step Distillation and Inference Cost
       repo_url: https://github.com/zzXavier/few-step-diffusion-distillation
